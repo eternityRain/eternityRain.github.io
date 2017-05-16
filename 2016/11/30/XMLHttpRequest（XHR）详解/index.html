@@ -1,0 +1,667 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="XMLHttpRequest," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="引言本文的阅读者，在阅读这篇文章时你需要拥有html，js，http的相关知识，这样你可以更好的理解我们所谈论的话题，因为我们并不会在文中对它们进行讲解。 简介解释定义XMLHttpRequest是一组API函数集，存在于浏览器的JS内核中，因此它可以被JavaScript这样web浏览器内嵌的脚本语言调用，通过HTTP在浏览器和web服务器之间收发XML或其它数据。 除XML之外，XMLHttp">
+<meta name="keywords" content="XMLHttpRequest">
+<meta property="og:type" content="article">
+<meta property="og:title" content="XMLHttpRequest（XHR）详解">
+<meta property="og:url" content="http://yoursite.com/2016/11/30/XMLHttpRequest（XHR）详解/index.html">
+<meta property="og:site_name" content="Eternity Rain">
+<meta property="og:description" content="引言本文的阅读者，在阅读这篇文章时你需要拥有html，js，http的相关知识，这样你可以更好的理解我们所谈论的话题，因为我们并不会在文中对它们进行讲解。 简介解释定义XMLHttpRequest是一组API函数集，存在于浏览器的JS内核中，因此它可以被JavaScript这样web浏览器内嵌的脚本语言调用，通过HTTP在浏览器和web服务器之间收发XML或其它数据。 除XML之外，XMLHttp">
+<meta property="og:image" content="http://image.beekka.com/blog/2014/bg2014100801.jpg">
+<meta property="og:image" content="http://image.beekka.com/blog/2014/bg2014100802.png">
+<meta property="og:updated_time" content="2017-05-14T22:00:59.057Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="XMLHttpRequest（XHR）详解">
+<meta name="twitter:description" content="引言本文的阅读者，在阅读这篇文章时你需要拥有html，js，http的相关知识，这样你可以更好的理解我们所谈论的话题，因为我们并不会在文中对它们进行讲解。 简介解释定义XMLHttpRequest是一组API函数集，存在于浏览器的JS内核中，因此它可以被JavaScript这样web浏览器内嵌的脚本语言调用，通过HTTP在浏览器和web服务器之间收发XML或其它数据。 除XML之外，XMLHttp">
+<meta name="twitter:image" content="http://image.beekka.com/blog/2014/bg2014100801.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/11/30/XMLHttpRequest（XHR）详解/"/>
+
+  <title> XMLHttpRequest（XHR）详解 | Eternity Rain </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Eternity Rain</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">blog</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                XMLHttpRequest（XHR）详解
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-11-30T17:45:48+08:00" content="2016-11-30">
+              2016-11-30
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>本文的阅读者，在阅读这篇文章时你需要拥有html，js，http的相关知识，这样你可以更好的理解我们所谈论的话题，因为我们并不会在文中对它们进行讲解。</p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="解释定义"><a href="#解释定义" class="headerlink" title="解释定义"></a>解释定义</h3><p>XMLHttpRequest是一组API函数集，存在于浏览器的JS内核中，因此它可以被JavaScript这样web浏览器内嵌的脚本语言调用，通过HTTP在浏览器和web服务器之间收发XML或其它数据。</p>
+<p>除XML之外，XMLHttpRequest还能用于获取其它格式的数据，如JSON或者甚至纯文本。</p>
+<h3 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h3><p>XMLHttp最初是由微软公司发明的，在Internet Explorer 5.0中用作ActiveX对象，可通过JavaScript、VBScript或其它浏览器支持的脚本语言访问。Mozilla的开发人员后来在Mozilla 1.0中实现了一个兼容的版本。之后苹果电脑公司在Safari 1.2中开始支持XMLHttpRequest，而Opera从8.0版开始也宣布支持XMLHttpRequest。<br>大多数使用了XMLHttpRequest的设计良好的网页，会使用简单的JavaScript函数（ajax）将不同浏览器之间调用XMLHttpRequest的差异性屏蔽，该函数会自动检测浏览器版本并隐藏不同环境的差异。</p>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ol>
+<li>XMLHttpRequest最大的好处在于可以动态地更新网页，它无需重新从服务器读取整个网页，也不需要安装额外的插件。该技术被许多网站使用，以实现快速响应的动态网页应用。例如：Google的Gmail服务、Google Suggest动态查找界面以及Google Map地理信息服务。</li>
+<li>上一个特点我称之为异步更新，还有一个特点，我把它叫做异步提交（当然也支持同步提交了）。这个特性的异步针对的是服务端，也就是说可以异步请求服务端，这样不会因为服务端响应时间过长而让页面出现假死情况。</li>
+</ol>
+<h2 id="运行机制"><a href="#运行机制" class="headerlink" title="运行机制"></a>运行机制</h2><p><a href="http://blog.csdn.net/github_35758702/article/details/53410654" target="_blank" rel="external">这里</a>有一篇文章介绍了JavaScript的运行机制。</p>
+<p>通过其中如下片段可以发现XMLHttpRequest的实现原理：</p>
+<blockquote>
+<p>单线程就意味着，所有任务需要排队，前一个任务结束，才会执行后一个任务。如果前一个任务耗时很长，后一个任务就不得不一直等着。<br>如果排队是因为计算量大，CPU忙不过来，倒也算了，但是很多时候CPU是闲着的，因为IO设备（输入输出设备）很慢（比如Ajax操作从网络读取数据），不得不等着结果出来，再往下执行。<br>JavaScript语言的设计者意识到，这时主线程完全可以不管IO设备，挂起处于等待中的任务，先运行排在后面的任务。等到IO设备返回了结果，再回过头，把挂起的任务继续执行下去。<br>于是，所有任务可以分成两种，一种是同步任务（synchronous），另一种是异步任务（asynchronous）。同步任务指的是，在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务；异步任务指的是，不进入主线程、而进入”任务队列”（task queue）的任务，只有”任务队列”通知主线程，某个异步任务可以执行了，该任务才会进入主线程执行。<br>具体来说，异步执行的运行机制如下：（同步执行也是如此，因为它可以被视为没有异步任务的异步执行。）</p>
+<p>（1）所有同步任务都在主线程上执行，形成一个执行栈（execution context stack）。<br>（2）主线程之外，还存在一个”任务队列”（task queue）。只要异步任务有了运行结果，就在”任务队列”之中放置一个事件。<br>（3）一旦”执行栈”中的所有同步任务执行完毕，系统就会读取”任务队列”，看看里面有哪些事件。那些对应的异步任务，于&gt;是结束等待状态，进入执行栈，开始执行。<br>（4）主线程不断重复上面的第三步。</p>
+<p>下图就是主线程和任务队列的示意图。</p>
+<p><img src="http://image.beekka.com/blog/2014/bg2014100801.jpg" alt="enter image description here"></p>
+<p>只要主线程空了，就会去读取”任务队列”，这就是JavaScript的运行机制。这个过程会不断重复。</p>
+<p><img src="http://image.beekka.com/blog/2014/bg2014100802.png" alt="enter image description here"></p>
+<p>上图中，主线程运行的时候，产生堆（heap）和栈（stack），栈中的代码调用各种外部API，它们在”任务队列”中加入各种事件（click，load，done）。只要栈中的代码执行完毕，主线程就会去读取”任务队列”，依次执行那些事件所对应的回调函数。</p>
+</blockquote>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>执行栈中的代码（同步任务），总是在读取”任务队列”（异步任务）之前执行。请看下面这个例子。</p>
+<pre><code>var req = new XMLHttpRequest();
+req.open(&apos;GET&apos;, url);    
+req.onload = function (){};    
+req.onerror = function (){};    
+req.send();
+</code></pre><p>上面代码中的req.send方法是Ajax操作向服务器发送数据，它是一个异步任务，意味着只有当前脚本的所有代码执行完，系统才会去读取”任务队列”。所以，它与下面的写法等价。</p>
+<pre><code>var req = new XMLHttpRequest();
+req.open(&apos;GET&apos;, url);
+req.send();
+req.onload = function (){};    
+req.onerror = function (){};  
+</code></pre><p>也就是说，指定回调函数的部分（onload和onerror），在send()方法的前面或后面无关紧要，因为它们属于执行栈的一部分，系统总是执行完它们，才会去读取”任务队列”。</p>
+<h2 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h2><p>Ajax是基于XMLHttpRequest实现的，前面提到过，不同浏览器之间调用XMLHttpRequest会有差异性，如下：</p>
+<p><strong>Internet Explorer</strong></p>
+<pre><code>xmlhttp_request = new ActiveXObject(“Msxml2.XMLHTTP.3.0″); //3.0或4.0, 5.0
+xmlhttp_request = new ActiveXObject(“Msxml2.XMLHTTP”);
+xmlhttp_request = new ActiveXObject(“Microsoft.XMLHTTP”);
+</code></pre><p><strong>Mozilla﹑Netscape﹑Safari</strong></p>
+<pre><code>xmlhttp_request = new XMLHttpRequest();
+</code></pre><p>下面是Ajax源码：</p>
+<pre><code>var xmlHttp
+
+function showHint(str)
+{
+
+  if (str.length==0)
+    { 
+    document.getElementById(&quot;txtHint&quot;).innerHTML=&quot;&quot;;
+    return;
+    }
+
+  xmlHttp=GetXmlHttpObject()
+
+  if (xmlHttp==null)
+    {
+    alert (&quot;您的浏览器不支持AJAX！&quot;);
+    return;
+    }
+
+  var url=&quot;gethint.asp&quot;;
+  url=url+&quot;?q=&quot;+str;
+  url=url+&quot;&amp;sid=&quot;+Math.random();
+  xmlHttp.onreadystatechange=stateChanged;
+  xmlHttp.open(&quot;GET&quot;,url,true);
+  xmlHttp.send(null);
+} 
+
+function stateChanged() 
+{ 
+if (xmlHttp.readyState==4)
+{ 
+document.getElementById(&quot;txtHint&quot;).innerHTML=xmlHttp.responseText;
+}
+}
+
+function GetXmlHttpObject()
+{
+  var xmlHttp=null;
+  try
+    {
+    // Firefox, Opera 8.0+, Safari
+    xmlHttp=new XMLHttpRequest();
+    }
+  catch (e)
+    {
+    // Internet Explorer
+    try
+      {
+      xmlHttp=new ActiveXObject(&quot;Msxml2.XMLHTTP&quot;);
+      }
+    catch (e)
+      {
+      xmlHttp=new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);
+      }
+    }
+return xmlHttp;
+}
+</code></pre><p>可以看到，Ajax只是对XMLHttpRequest进行了封装，将不同浏览器之间调用XMLHttpRequest的差异性对外屏蔽。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/XMLHttpRequest/" rel="tag">#XMLHttpRequest</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/30/JavaScript运行机制详解/" rel="next" title="JavaScript运行机制详解">
+                <i class="fa fa-chevron-left"></i> JavaScript运行机制详解
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/12/raml转换为html-js-markdown/" rel="prev" title="raml转换为html,js,markdown">
+                raml转换为html,js,markdown <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="lashou" />
+          <p class="site-author-name" itemprop="name">lashou</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Kategorien</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">2.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解释定义"><span class="nav-number">2.1.</span> <span class="nav-text">解释定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#背景知识"><span class="nav-number">2.2.</span> <span class="nav-text">背景知识</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特点"><span class="nav-number">3.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行机制"><span class="nav-number">4.</span> <span class="nav-text">运行机制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">5.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ajax"><span class="nav-number">6.</span> <span class="nav-text">Ajax</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lashou</span>
+</div>
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

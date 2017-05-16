@@ -1,0 +1,2471 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eternity Rain">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Eternity Rain">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Eternity Rain">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+  <title> Eternity Rain </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Eternity Rain</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">blog</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/05/16/RAML-To-JAX-RS-Maven插件工作原理/" itemprop="url">
+                  RAML-To-JAX-RS_Maven插件工作原理
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2017-05-16T17:29:14+08:00" content="2017-05-16">
+              2017-05-16
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这篇关于raml to jax-rs 插件的文章旨在分析该插件的工作原理和对其部分源码进行解析，<br>如果你还不认识它，可以从<a href="https://eternityrain.github.io/2016/11/24/raml-for-jax-rs%E6%8F%92%E4%BB%B6/" target="_blank" rel="external">《raml-for-jax-rs插件》</a>解它并学习它的使用方法。</p>
+<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><p>raml to jax-rs 插件完成了从 raml -&gt; java 的转换，这其中包括raml的解析工作以及java代码的生成工作。整个工作需要依赖三个主要的部分：</p>
+<ul>
+<li><a href="https://github.com/raml-org/raml-java-parser/tree/0.8.12" target="_blank" rel="external">raml-java-parser</a></li>
+<li><a href="https://github.com/mulesoft-labs/raml-for-jax-rs/tree/v1.3.4/raml-to-jaxrs/core" target="_blank" rel="external">raml-jaxrs-codegen-core</a></li>
+<li><a href="https://github.com/mulesoft-labs/raml-for-jax-rs/tree/v1.3.4/raml-to-jaxrs/maven-plugin" target="_blank" rel="external">ram-jaxrs-maven-plugin</a></li>
+</ul>
+<p>其中后面两部分都属于<a href="https://github.com/mulesoft-labs/raml-for-jax-rs" target="_blank" rel="external">raml-for-jax-rs</a>项目中的子模块，由mulesoft开发，第一部分由raml-org组织开发。</p>
+<h3 id="raml-java-parser"><a href="#raml-java-parser" class="headerlink" title="raml-java-parser"></a>raml-java-parser</h3><h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><p>解析并验证raml</p>
+<h4 id="运行机制"><a href="#运行机制" class="headerlink" title="运行机制"></a>运行机制</h4><p>说到运行机制，先上一个raml的例子：</p>
+<pre><code>#%RAML 0.8
+title: Contacts App
+version: v1
+schemas:
+  - tree: !include schema/tree.json
+  - apiCreatedEntity: |
+      {  &quot;$schema&quot;: &quot;http://json-schema.org/draft-03/schema&quot;,
+         &quot;type&quot;: &quot;object&quot;,
+         &quot;description&quot;: &quot;Response JSON for successful POST operation&quot;,
+         &quot;properties&quot;: {
+           &quot;id&quot;:  { &quot;type&quot;: &quot;string&quot;, &quot;required&quot;: true }
+         }
+      }
+  - apiContact: !include schema/api-contact.json
+
+/contacts:
+  # note, changing the displayName will change the name of the generated class in ${base.package.name}.resource
+  displayName: Contacts
+  /{id}:
+    get:
+      description: Retrieves specific contact by id
+      responses:
+        200:
+          body:
+            application/json:
+               schema: tree
+        400:
+          description: Bad Request
+        500:
+          description: Internal Server Error
+</code></pre><p>raml语法是在yaml的语法规范之上又定义了一套针对REST的规范，所以解析raml就分为yaml解析和raml解析两部分。<br>如果解析上面的raml，会有以下几步：</p>
+<ol>
+<li>验证yaml语法，并将raml转化为树形结构对象；</li>
+<li>树形对象进入raml验证阶段，程序以广度优先遍历的方式层层获取树形的node，同时依据已有的配置对该树对象进行验证，这里的配置不止一类：<ul>
+<li>定义每种不同的node下允许出现的子node类型来控制raml语言中key的范围，如：title是必须有的标签；resouce 可以有get,post等action，但是不能在其下定义 “ben” 这样的action；</li>
+<li>定义node对应的handler可以控制raml中key对应的value的范围，如：body下面的mimeType可以是”application/json”，”application/xml”，”application/x-www-form-urlencoded”，”multipart/form-data”这几种；</li>
+<li>定义node对应的rule可以控制value的规则，如：baseUri标签对应BaseUriRule，该rule中通过正则规范了value必须符合URI结构。</li>
+</ul>
+</li>
+</ol>
+<p>通过这两步可以完全验证raml文件是否符合raml规范。</p>
+<h3 id="raml-jaxrs-codegen-core"><a href="#raml-jaxrs-codegen-core" class="headerlink" title="raml-jaxrs-codegen-core"></a>raml-jaxrs-codegen-core</h3><h4 id="功能-1"><a href="#功能-1" class="headerlink" title="功能"></a>功能</h4><p>集成<code>raml-java-parser</code>对raml进行解析并验证，转换raml对象为java，这里提到一点，生成java model并写成java文件是由sun的 JCodeModel 工具来实现的。</p>
+<h4 id="运行机制："><a href="#运行机制：" class="headerlink" title="运行机制："></a>运行机制：</h4><p>生成过程中主要用到的几个类有 Context , AbstractGenerator , Generator , ClientGenerator , Configuration:</p>
+<ul>
+<li><code>Configuration</code> 用来hold生成过程中的参数；</li>
+<li><code>Context</code> 持有整个过程中 Configuration, Raml object，JCodeModel 实例 ，SchemaMapper；</li>
+<li><code>AbstractGenerator</code> ： <code>AbstractGenerator</code>是<code>Generator</code>和<code>ClientGenerator</code>的模板类，提供<code>addResourceMethod</code>方法供它们实现，因为生成interface method的逻辑，Generator 和 ClientGenerator是不一样的。其他的功能比如生成interface，添加参数，标记注解，配置验证等公用部分在<code>AbstractGenerator</code>里直接提供。</li>
+</ul>
+<p>生成过程在以上几个类的配合下进行：验证raml对象、解析json schema并生成java model、依据configuration 决定解析resource并生成interface model的方式、将mode写成java文件。</p>
+<h3 id="ram-jaxrs-maven-plugin"><a href="#ram-jaxrs-maven-plugin" class="headerlink" title="ram-jaxrs-maven-plugin"></a>ram-jaxrs-maven-plugin</h3><h4 id="功能-2"><a href="#功能-2" class="headerlink" title="功能"></a>功能</h4><p>提供raml-to-jaxrs 的maven插件功能，对外暴露raml生成java过程中可配置的参数，将控制权交由使用者。</p>
+<h4 id="运行机制-1"><a href="#运行机制-1" class="headerlink" title="运行机制"></a>运行机制</h4><p>这里就是比较薄的一层了，仅仅是将用户配置的参数转变为 core 中的 <code>Configuration</code>对象，然后先去验证raml文件头部的<code>&quot;#%RAML **&quot;</code>行是否存在，接下来根据<code>configuration</code>调用<code>Generator</code>或 <code>ClientGenerator</code>的<code>run()</code>方法。</p>
+<h2 id="研究源码后的一些想法"><a href="#研究源码后的一些想法" class="headerlink" title="研究源码后的一些想法"></a>研究源码后的一些想法</h2><p>基于以上的研究结果，现在可以根据需要，自由生成特定的java代码，同时也可以自定义raml新的语法规则。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/12/raml转换为html-js-markdown/" itemprop="url">
+                  raml转换为html,js,markdown
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-12-12T10:35:00+08:00" content="2016-12-12">
+              2016-12-12
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>通过raml将接口设计完成后，我们需要提供简洁可读的直观视图和说明文档。<br>这里我们通过node.js来实现转换</p>
+<h2 id="Raml2html"><a href="#Raml2html" class="headerlink" title="Raml2html"></a>Raml2html</h2><p><a href="https://github.com/raml2html/raml2html" target="_blank" rel="external">官方地址</a></p>
+<h3 id="raml版本支持"><a href="#raml版本支持" class="headerlink" title="raml版本支持"></a>raml版本支持</h3><p>raml2html 4和更高的版本仅支持raml 1.0语法转换，对于raml 0.8语法，需要使用raml2html的3.x版本</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><code>npm i -g raml2html</code></p>
+<p><strong>NOTE:</strong>如果是raml 0.8,执行 <code>npm i -g raml2html@3.0.0</code></p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>raml2html –help<br>raml2html example.raml &gt; example.html</p>
+<h2 id="Raml2md"><a href="#Raml2md" class="headerlink" title="Raml2md"></a>Raml2md</h2><p><a href="https://github.com/raml2html/raml2md" target="_blank" rel="external">官方地址</a></p>
+<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p><code>npm i -g raml2md</code></p>
+<h3 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h3><p>raml2md example.raml &gt; example.md<br>raml2md -i example.raml -o example.md</p>
+<p>以上两种方式都可以实现</p>
+<h2 id="Raml-javascript-生成器"><a href="#Raml-javascript-生成器" class="headerlink" title="Raml javascript 生成器"></a>Raml javascript 生成器</h2><p><a href="https://github.com/mulesoft/raml-client-generator" target="_blank" rel="external">官方地址</a></p>
+<h3 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h3><p>npm install raml-client-generator -g</p>
+<h3 id="使用-2"><a href="#使用-2" class="headerlink" title="使用"></a>使用</h3><p>raml-to-client api.raml -o api-client -l javascript</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/30/XMLHttpRequest（XHR）详解/" itemprop="url">
+                  XMLHttpRequest（XHR）详解
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-11-30T17:45:48+08:00" content="2016-11-30">
+              2016-11-30
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>本文的阅读者，在阅读这篇文章时你需要拥有html，js，http的相关知识，这样你可以更好的理解我们所谈论的话题，因为我们并不会在文中对它们进行讲解。</p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="解释定义"><a href="#解释定义" class="headerlink" title="解释定义"></a>解释定义</h3><p>XMLHttpRequest是一组API函数集，存在于浏览器的JS内核中，因此它可以被JavaScript这样web浏览器内嵌的脚本语言调用，通过HTTP在浏览器和web服务器之间收发XML或其它数据。</p>
+<p>除XML之外，XMLHttpRequest还能用于获取其它格式的数据，如JSON或者甚至纯文本。</p>
+<h3 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h3><p>XMLHttp最初是由微软公司发明的，在Internet Explorer 5.0中用作ActiveX对象，可通过JavaScript、VBScript或其它浏览器支持的脚本语言访问。Mozilla的开发人员后来在Mozilla 1.0中实现了一个兼容的版本。之后苹果电脑公司在Safari 1.2中开始支持XMLHttpRequest，而Opera从8.0版开始也宣布支持XMLHttpRequest。<br>大多数使用了XMLHttpRequest的设计良好的网页，会使用简单的JavaScript函数（ajax）将不同浏览器之间调用XMLHttpRequest的差异性屏蔽，该函数会自动检测浏览器版本并隐藏不同环境的差异。</p>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ol>
+<li>XMLHttpRequest最大的好处在于可以动态地更新网页，它无需重新从服务器读取整个网页，也不需要安装额外的插件。该技术被许多网站使用，以实现快速响应的动态网页应用。例如：Google的Gmail服务、Google Suggest动态查找界面以及Google Map地理信息服务。</li>
+<li>上一个特点我称之为异步更新，还有一个特点，我把它叫做异步提交（当然也支持同步提交了）。这个特性的异步针对的是服务端，也就是说可以异步请求服务端，这样不会因为服务端响应时间过长而让页面出现假死情况。</li>
+</ol>
+<h2 id="运行机制"><a href="#运行机制" class="headerlink" title="运行机制"></a>运行机制</h2><p><a href="http://blog.csdn.net/github_35758702/article/details/53410654" target="_blank" rel="external">这里</a>有一篇文章介绍了JavaScript的运行机制。</p>
+<p>通过其中如下片段可以发现XMLHttpRequest的实现原理：</p>
+<blockquote>
+<p>单线程就意味着，所有任务需要排队，前一个任务结束，才会执行后一个任务。如果前一个任务耗时很长，后一个任务就不得不一直等着。<br>如果排队是因为计算量大，CPU忙不过来，倒也算了，但是很多时候CPU是闲着的，因为IO设备（输入输出设备）很慢（比如Ajax操作从网络读取数据），不得不等着结果出来，再往下执行。<br>JavaScript语言的设计者意识到，这时主线程完全可以不管IO设备，挂起处于等待中的任务，先运行排在后面的任务。等到IO设备返回了结果，再回过头，把挂起的任务继续执行下去。<br>于是，所有任务可以分成两种，一种是同步任务（synchronous），另一种是异步任务（asynchronous）。同步任务指的是，在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务；异步任务指的是，不进入主线程、而进入”任务队列”（task queue）的任务，只有”任务队列”通知主线程，某个异步任务可以执行了，该任务才会进入主线程执行。<br>具体来说，异步执行的运行机制如下：（同步执行也是如此，因为它可以被视为没有异步任务的异步执行。）</p>
+<p>（1）所有同步任务都在主线程上执行，形成一个执行栈（execution context stack）。<br>（2）主线程之外，还存在一个”任务队列”（task queue）。只要异步任务有了运行结果，就在”任务队列”之中放置一个事件。<br>（3）一旦”执行栈”中的所有同步任务执行完毕，系统就会读取”任务队列”，看看里面有哪些事件。那些对应的异步任务，于&gt;是结束等待状态，进入执行栈，开始执行。<br>（4）主线程不断重复上面的第三步。</p>
+<p>下图就是主线程和任务队列的示意图。</p>
+<p><img src="http://image.beekka.com/blog/2014/bg2014100801.jpg" alt="enter image description here"></p>
+<p>只要主线程空了，就会去读取”任务队列”，这就是JavaScript的运行机制。这个过程会不断重复。</p>
+<p><img src="http://image.beekka.com/blog/2014/bg2014100802.png" alt="enter image description here"></p>
+<p>上图中，主线程运行的时候，产生堆（heap）和栈（stack），栈中的代码调用各种外部API，它们在”任务队列”中加入各种事件（click，load，done）。只要栈中的代码执行完毕，主线程就会去读取”任务队列”，依次执行那些事件所对应的回调函数。</p>
+</blockquote>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>执行栈中的代码（同步任务），总是在读取”任务队列”（异步任务）之前执行。请看下面这个例子。</p>
+<pre><code>var req = new XMLHttpRequest();
+req.open(&apos;GET&apos;, url);    
+req.onload = function (){};    
+req.onerror = function (){};    
+req.send();
+</code></pre><p>上面代码中的req.send方法是Ajax操作向服务器发送数据，它是一个异步任务，意味着只有当前脚本的所有代码执行完，系统才会去读取”任务队列”。所以，它与下面的写法等价。</p>
+<pre><code>var req = new XMLHttpRequest();
+req.open(&apos;GET&apos;, url);
+req.send();
+req.onload = function (){};    
+req.onerror = function (){};  
+</code></pre><p>也就是说，指定回调函数的部分（onload和onerror），在send()方法的前面或后面无关紧要，因为它们属于执行栈的一部分，系统总是执行完它们，才会去读取”任务队列”。</p>
+<h2 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h2><p>Ajax是基于XMLHttpRequest实现的，前面提到过，不同浏览器之间调用XMLHttpRequest会有差异性，如下：</p>
+<p><strong>Internet Explorer</strong></p>
+<pre><code>xmlhttp_request = new ActiveXObject(“Msxml2.XMLHTTP.3.0″); //3.0或4.0, 5.0
+xmlhttp_request = new ActiveXObject(“Msxml2.XMLHTTP”);
+xmlhttp_request = new ActiveXObject(“Microsoft.XMLHTTP”);
+</code></pre><p><strong>Mozilla﹑Netscape﹑Safari</strong></p>
+<pre><code>xmlhttp_request = new XMLHttpRequest();
+</code></pre><p>下面是Ajax源码：</p>
+<pre><code>var xmlHttp
+
+function showHint(str)
+{
+
+  if (str.length==0)
+    { 
+    document.getElementById(&quot;txtHint&quot;).innerHTML=&quot;&quot;;
+    return;
+    }
+
+  xmlHttp=GetXmlHttpObject()
+
+  if (xmlHttp==null)
+    {
+    alert (&quot;您的浏览器不支持AJAX！&quot;);
+    return;
+    }
+
+  var url=&quot;gethint.asp&quot;;
+  url=url+&quot;?q=&quot;+str;
+  url=url+&quot;&amp;sid=&quot;+Math.random();
+  xmlHttp.onreadystatechange=stateChanged;
+  xmlHttp.open(&quot;GET&quot;,url,true);
+  xmlHttp.send(null);
+} 
+
+function stateChanged() 
+{ 
+if (xmlHttp.readyState==4)
+{ 
+document.getElementById(&quot;txtHint&quot;).innerHTML=xmlHttp.responseText;
+}
+}
+
+function GetXmlHttpObject()
+{
+  var xmlHttp=null;
+  try
+    {
+    // Firefox, Opera 8.0+, Safari
+    xmlHttp=new XMLHttpRequest();
+    }
+  catch (e)
+    {
+    // Internet Explorer
+    try
+      {
+      xmlHttp=new ActiveXObject(&quot;Msxml2.XMLHTTP&quot;);
+      }
+    catch (e)
+      {
+      xmlHttp=new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);
+      }
+    }
+return xmlHttp;
+}
+</code></pre><p>可以看到，Ajax只是对XMLHttpRequest进行了封装，将不同浏览器之间调用XMLHttpRequest的差异性对外屏蔽。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/30/JavaScript运行机制详解/" itemprop="url">
+                  JavaScript运行机制详解
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-11-30T17:42:57+08:00" content="2016-11-30">
+              2016-11-30
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="单线程"><a href="#单线程" class="headerlink" title="单线程"></a>单线程</h2><p>JavaScript语言的一大特点就是单线程，也就是说，同一个时间只能做一件事。那么，为什么JavaScript不能有多个线程呢？这样能提高效率啊。<br>JavaScript的单线程，与它的用途有关。作为浏览器脚本语言，JavaScript的主要用途是与用户互动，以及操作DOM。这决定了它只能是单线程，否则会带来很复杂的同步问题。比如，假定JavaScript同时有两个线程，一个线程在某个DOM节点上添加内容，另一个线程删除了这个节点，这时浏览器应该以哪个线程为准？<br>所以，为了避免复杂性，从一诞生，JavaScript就是单线程，这已经成了这门语言的核心特征，将来也不会改变。<br>为了利用多核CPU的计算能力，HTML5提出Web Worker标准，允许JavaScript脚本创建多个线程，但是子线程完全受主线程控制，且不得操作DOM。所以，这个新标准并没有改变JavaScript单线程的本质。</p>
+<h2 id="任务队列"><a href="#任务队列" class="headerlink" title="任务队列"></a>任务队列</h2><p>单线程就意味着，所有任务需要排队，前一个任务结束，才会执行后一个任务。如果前一个任务耗时很长，后一个任务就不得不一直等着。<br>如果排队是因为计算量大，CPU忙不过来，倒也算了，但是很多时候CPU是闲着的，因为IO设备（输入输出设备）很慢（比如Ajax操作从网络读取数据），不得不等着结果出来，再往下执行。<br>JavaScript语言的设计者意识到，这时主线程完全可以不管IO设备，挂起处于等待中的任务，先运行排在后面的任务。等到IO设备返回了结果，再回过头，把挂起的任务继续执行下去。<br>于是，所有任务可以分成两种，一种是同步任务（synchronous），另一种是异步任务（asynchronous）。同步任务指的是，在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务；异步任务指的是，不进入主线程、而进入”任务队列”（task queue）的任务，只有”任务队列”通知主线程，某个异步任务可以执行了，该任务才会进入主线程执行。<br>具体来说，异步执行的运行机制如下。（同步执行也是如此，因为它可以被视为没有异步任务的异步执行。）</p>
+<blockquote>
+<p>（1）所有同步任务都在主线程上执行，形成一个执行栈（execution context stack）。<br>（2）主线程之外，还存在一个”任务队列”（task queue）。只要异步任务有了运行结果，就在”任务队列”之中放置一个事件。<br>（3）一旦”执行栈”中的所有同步任务执行完毕，系统就会读取”任务队列”，看看里面有哪些事件。那些对应的异步任务，于是结束等待状态，进入执行栈，开始执行。<br>（4）主线程不断重复上面的第三步。</p>
+</blockquote>
+<p>下图就是主线程和任务队列的示意图。</p>
+<p><img src="http://image.beekka.com/blog/2014/bg2014100801.jpg" alt="enter image description here"></p>
+<p>只要主线程空了，就会去读取”任务队列”，这就是JavaScript的运行机制。这个过程会不断重复。</p>
+<h2 id="事件和回调函数"><a href="#事件和回调函数" class="headerlink" title="事件和回调函数"></a>事件和回调函数</h2><p>“任务队列”是一个事件的队列（也可以理解成消息的队列），IO设备完成一项任务，就在”任务队列”中添加一个事件，表示相关的异步任务可以进入”执行栈”了。主线程读取”任务队列”，就是读取里面有哪些事件。<br>“任务队列”中的事件，除了IO设备的事件以外，还包括一些用户产生的事件（比如鼠标点击、页面滚动等等）。只要指定过回调函数，这些事件发生时就会进入”任务队列”，等待主线程读取。<br>所谓”回调函数”（callback），就是那些会被主线程挂起来的代码。异步任务必须指定回调函数，当主线程开始执行异步任务，就是执行对应的回调函数。<br>“任务队列”是一个先进先出的数据结构，排在前面的事件，优先被主线程读取。主线程的读取过程基本上是自动的，只要执行栈一清空，”任务队列”上第一位的事件就自动进入主线程。但是，由于存在后文提到的”定时器”功能，主线程首先要检查一下执行时间，某些事件只有到了规定的时间，才能返回主线程。</p>
+<h2 id="Event-Loop"><a href="#Event-Loop" class="headerlink" title="Event Loop"></a>Event Loop</h2><p>主线程从”任务队列”中读取事件，这个过程是循环不断的，所以整个的这种运行机制又称为Event Loop（事件循环）。<br>为了更好地理解Event Loop，请看下图（转引自Philip Roberts的演讲《Help, I’m stuck in an event-loop》）。</p>
+<p><img src="http://image.beekka.com/blog/2014/bg2014100802.png" alt="enter image description here"></p>
+<p>上图中，主线程运行的时候，产生堆（heap）和栈（stack），栈中的代码调用各种外部API，它们在”任务队列”中加入各种事件（click，load，done）。只要栈中的代码执行完毕，主线程就会去读取”任务队列”，依次执行那些事件所对应的回调函数。<br>执行栈中的代码（同步任务），总是在读取”任务队列”（异步任务）之前执行。请看下面这个例子。</p>
+<pre><code>var req = new XMLHttpRequest();
+req.open(&apos;GET&apos;, url);    
+req.onload = function (){};    
+req.onerror = function (){};    
+req.send();
+</code></pre><p>上面代码中的req.send方法是Ajax操作向服务器发送数据，它是一个异步任务，意味着只有当前脚本的所有代码执行完，系统才会去读取”任务队列”。所以，它与下面的写法等价。</p>
+<pre><code>var req = new XMLHttpRequest();
+req.open(&apos;GET&apos;, url);
+req.send();
+req.onload = function (){};    
+req.onerror = function (){};   
+</code></pre><p>也就是说，指定回调函数的部分（onload和onerror），在send()方法的前面或后面无关紧要，因为它们属于执行栈的一部分，系统总是执行完它们，才会去读取”任务队列”。</p>
+<h2 id="定时器"><a href="#定时器" class="headerlink" title="定时器"></a>定时器</h2><p>除了放置异步任务的事件，”任务队列”还可以放置定时事件，即指定某些代码在多少时间之后执行。这叫做”定时器”（timer）功能，也就是定时执行的代码。<br>定时器功能主要由setTimeout()和setInterval()这两个函数来完成，它们的内部运行机制完全一样，区别在于前者指定的代码是一次性执行，后者则为反复执行。以下主要讨论setTimeout()。<br>setTimeout()接受两个参数，第一个是回调函数，第二个是推迟执行的毫秒数。</p>
+<pre><code>console.log(1);
+setTimeout(function(){console.log(2);},1000);
+console.log(3);
+</code></pre><p>上面代码的执行结果是1，3，2，因为setTimeout()将第二行推迟到1000毫秒之后执行。<br>如果将setTimeout()的第二个参数设为0，就表示当前代码执行完（执行栈清空）以后，立即执行（0毫秒间隔）指定的回调函数。</p>
+<pre><code>setTimeout(function(){console.log(1);}, 0);
+console.log(2);
+</code></pre><p>上面代码的执行结果总是2，1，因为只有在执行完第二行以后，系统才会去执行”任务队列”中的回调函数。<br>总之，setTimeout(fn,0)的含义是，指定某个任务在主线程最早可得的空闲时间执行，也就是说，尽可能早得执行。它在”任务队列”的尾部添加一个事件，因此要等到同步任务和”任务队列”现有的事件都处理完，才会得到执行。<br>HTML5标准规定了setTimeout()的第二个参数的最小值（最短间隔），不得低于4毫秒，如果低于这个值，就会自动增加。在此之前，老版本的浏览器都将最短间隔设为10毫秒。另外，对于那些DOM的变动（尤其是涉及页面重新渲染的部分），通常不会立即执行，而是每16毫秒执行一次。这时使用requestAnimationFrame()的效果要好于setTimeout()。<br>需要注意的是，setTimeout()只是将事件插入了”任务队列”，必须等到当前代码（执行栈）执行完，主线程才会去执行它指定的回调函数。要是当前代码耗时很长，有可能要等很久，所以并没有办法保证，回调函数一定会在setTimeout()指定的时间执行。</p>
+<p><strong>以上文章引用于</strong>：<a href="http://www.ruanyifeng.com/blog/2014/10/event-loop.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2014/10/event-loop.html</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/27/Hexo介绍及常用安装使用/" itemprop="url">
+                  Hexo介绍及常用安装使用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-11-27T21:59:22+08:00" content="2016-11-27">
+              2016-11-27
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="hexo简介"><a href="#hexo简介" class="headerlink" title="hexo简介"></a>hexo简介</h2><p>hexo是使用nodejs开发的一个快速、简洁、高效、开源的静态博客生成器。</p>
+<p>hexo使用Markdown解析文章，因此，文章需采用Markdown语法编写，在几秒内，即可利用靓丽的主题生成静态网页。类似于jekyll、Octopress、Wordpress，我们可以用hexo创建自己的博客，托管到github，绑定自己的域名。</p>
+<h2 id="选择hexo的理由"><a href="#选择hexo的理由" class="headerlink" title="选择hexo的理由"></a>选择hexo的理由</h2><p>市场上也有不少其他类似hexo的博客生成器，为什么选择hexo呢？</p>
+<ul>
+<li><p>非常小巧，使用nodejs开发，下载安装时只需要几个简答的npm命令即可</p>
+</li>
+<li><p>纯静态博客，不需要额外的数据库、php环境…仅仅需要一个nodejs环境即可</p>
+</li>
+<li><p>由于是静态博客，所以，可以非常方便部署到github</p>
+</li>
+<li><p>支持markdown语法、兼容windows linux mac，高可扩展性和自定义，而且有非常多的hexo主题</p>
+</li>
+</ul>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>这里我们针对windows环境进行演示说明，其他环境大体上与此一致，详细请参照<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">官方文档</a>。</p>
+<p>在安装hexo之前，你需要保证环境中有Node.js和Git环境，这里我们就不赘述他们俩的安装。</p>
+<p>在Node.js和Git安装无误情况下，执行：</p>
+<p><code>$ npm install -g hexo-cli</code></p>
+<p>通过npm进行hexo的全局安装，这么简单，一条命令hexo即安装完成。</p>
+<h2 id="hexo使用"><a href="#hexo使用" class="headerlink" title="hexo使用"></a>hexo使用</h2><h3 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h3><p>安装hexo完成后，就可以进行使用了。</p>
+<p>首先，对于不是从github更新的hexo库，我们需要自己初始化本地hexo库：</p>
+<pre><code>$ hexo init &lt;folder&gt;
+$ cd &lt;folder&gt;
+$ npm install
+</code></pre><p>初始化完成后目录下有如下文件：</p>
+<p><img src="http://i.imgur.com/BOb0Rtx.png" alt=""></p>
+<h4 id="结构说明"><a href="#结构说明" class="headerlink" title="结构说明"></a>结构说明</h4><h5 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h5><p>网站的<a href="https://hexo.io/docs/configuration.html" target="_blank" rel="external">配置</a>信息，可以在此配置大部分的参数。</p>
+<h5 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h5><p>应用程序的信息。EJS, Stylus 和 Markdown renderer 已默认安装，你可以自由移除。</p>
+<pre><code>package.json
+{
+  &quot;name&quot;: &quot;hexo-site&quot;,
+  &quot;version&quot;: &quot;0.0.0&quot;,
+  &quot;private&quot;: true,
+  &quot;hexo&quot;: {
+    &quot;version&quot;: &quot;&quot;
+  },
+  &quot;dependencies&quot;: {
+    &quot;hexo&quot;: &quot;^3.0.0&quot;,
+    &quot;hexo-generator-archive&quot;: &quot;^0.1.0&quot;,
+    &quot;hexo-generator-category&quot;: &quot;^0.1.0&quot;,
+    &quot;hexo-generator-index&quot;: &quot;^0.1.0&quot;,
+    &quot;hexo-generator-tag&quot;: &quot;^0.1.0&quot;,
+    &quot;hexo-renderer-ejs&quot;: &quot;^0.1.0&quot;,
+    &quot;hexo-renderer-stylus&quot;: &quot;^0.2.0&quot;,
+    &quot;hexo-renderer-marked&quot;: &quot;^0.2.4&quot;,
+    &quot;hexo-server&quot;: &quot;^0.1.2&quot;
+  }
+}
+</code></pre><h5 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h5><p>模版 文件夹。当你新建文章时，Hexo 会根据 scaffold 来建立文件。</p>
+<h5 id="source"><a href="#source" class="headerlink" title="source"></a>source</h5><p>资源文件夹是存放用户资源(blog)的地方。</p>
+<h5 id="public"><a href="#public" class="headerlink" title="public"></a>public</h5><p>Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。</p>
+<h5 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h5><p>主题文件夹。Hexo会根据主题来生成静态页面。</p>
+<p>这样即建站成功。</p>
+<h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><p>完成建站，接下来当然是开始写作了。</p>
+<p><code>$ hexo new [layout] &lt;title&gt;</code></p>
+<p>这条命令用来创建一篇新文章，用hexo new创建的文章格式是md，和普通markdown文档不一样，它包含了当前layout提供的头部模板，如post layout布局的文章，顶部会出现：</p>
+<pre><code>---
+title: Hexo介绍及常用安装使用
+date: 2016-11-27 21:59:22
+tags: hexo
+---
+</code></pre><p>在_config.yml中会有default_layout这个参数，默认是post，也就是说不加<code>layout</code>参数时，<code>new</code>出来的文章使用post布局。当然，default_layout可以根据自己的需要进行更改。</p>
+<h4 id="layout"><a href="#layout" class="headerlink" title="layout"></a>layout</h4><p>Hexo 有三种默认布局：post、page 和 draft，它们分别对应不同的路径，而你自定义的其他布局和 post 相同，都将储存到 source/_posts 文件夹。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">布局</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">post</td>
+<td>source/_posts</td>
+</tr>
+<tr>
+<td style="text-align:left">page</td>
+<td>source</td>
+</tr>
+<tr>
+<td style="text-align:left">draft</td>
+<td>source/_drafts</td>
+</tr>
+</tbody>
+</table>
+<p>上面说过post布局的样子，对于page和draft，你可以尝试用它们 new 一篇新文章来看看效果。</p>
+<h4 id="文件名称"><a href="#文件名称" class="headerlink" title="文件名称"></a>文件名称</h4><p>Hexo 默认以标题做为文件名称，但你可以编辑_config.yml中的 new_post_name 参数来改变默认的文件名称，举例来说，设为 :year-:month-:day-:title.md 可让您更方便的通过日期来管理文章。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">变量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">:title</td>
+<td>标题（小写，空格将会被替换为短杠）</td>
+</tr>
+<tr>
+<td style="text-align:left">:year</td>
+<td>建立的年份，比如， 2016</td>
+</tr>
+<tr>
+<td style="text-align:left">:month</td>
+<td>建立的月份（有前导零），比如， 04</td>
+</tr>
+<tr>
+<td style="text-align:left">:i_month</td>
+<td>建立的月份（无前导零），比如， 4</td>
+</tr>
+<tr>
+<td style="text-align:left">:day</td>
+<td>建立的日期（有前导零），比如， 07</td>
+</tr>
+<tr>
+<td style="text-align:left">:i_day</td>
+<td>建立的日期（无前导零），比如， 7</td>
+</tr>
+</tbody>
+</table>
+<p>文件创建成功，剩下的就是用markdown语法进行愉快的创作了！</p>
+<h3 id="生成及部署"><a href="#生成及部署" class="headerlink" title="生成及部署"></a>生成及部署</h3><h4 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h4><p>文档编写完成后，想要对外发布就得先进行文章的解析和资源的生成：</p>
+<p><code>$ hexo generate</code></p>
+<p>该命令生成静态网页文件。</p>
+<h4 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h4><p>生成完可以在本地进行启动测试：</p>
+<p><code>$ hexo server</code></p>
+<p>启动后，可以通过<code>http://localhost:4000/</code>访问本地blog。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">-p,–port</td>
+<td>重设端口</td>
+</tr>
+<tr>
+<td style="text-align:left">-s,–static</td>
+<td>只使用静态文件</td>
+</tr>
+<tr>
+<td style="text-align:left">-l,–log</td>
+<td>启动日记记录，使用覆盖记录格式</td>
+</tr>
+</tbody>
+</table>
+<h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><p><code>$ hexo deploy</code></p>
+<p>该命令用来对generate后的资源进行部署，但是注意，使用该命令之前，需要安装hexo-deployer-git插件：</p>
+<p><code>$ npm install hexo-deployer-git</code></p>
+<p>安装完成，我们可以进行部署，这里我们还得明确一点，部署到哪？</p>
+<p>在_config.yml中可以指定部署目的地：</p>
+<pre><code>deploy:
+- type: git
+  repo:
+- type: heroku
+  repo:
+</code></pre><p>对于git方式来说，repo建议使用ssh协议而非https协议，还有，你需要提前在github上配置好当前机器的公钥。</p>
+<p>这个指定的git repo是一个<a href="https://pages.github.com/" target="_blank" rel="external"><strong>github pages</strong></a>，他是github为方便程序员们发布项目的说明文档而开放的服务，而 gh Pgaes 的美好之处在于，它有足以胜任成为一个独立博客的能耐。这里不详细介绍，你可以去官网学习。</p>
+<p>在deploy之后，访问github pages地址你会发现文档已经全部发布。</p>
+<p><img src="http://i.imgur.com/v1K2xKw.jpg" alt=""></p>
+<p>如果嫌麻烦，可以执行:</p>
+<p><code>$ hexo generate -d</code></p>
+<p>or</p>
+<p><code>$ hexo g -d</code></p>
+<p>将编译和部署合并成一步操作</p>
+<h4 id="清理"><a href="#清理" class="headerlink" title="清理"></a>清理</h4><p><code>$ hexo clean</code></p>
+<p>清理掉以生成的静态网页相关文件</p>
+<h3 id="针对github上已有的blog仓库"><a href="#针对github上已有的blog仓库" class="headerlink" title="针对github上已有的blog仓库"></a>针对github上已有的blog仓库</h3><p>实际工作中，往往是已经有一个blog仓库，我们需要更新它到本地并用hexo去管理。</p>
+<p>由于hexo管理下的node_modules文件夹过大，一般我们不会将其放在github中，所以clone下来的文件夹中没有node_modules，需要执行如下命令进行node_modules的安装：</p>
+<pre><code>$ npm install
+</code></pre><p>这种情况下不需要执行初始化<code>hexo init</code>了，之后的其他操作都还是一样的。</p>
+<p><strong>注：以上对于hexo的常用知识进行了介绍，如果你还需要了解更详细的内容，从<a href="https://hexo.io/docs/" target="_blank" rel="external">这里</a>到官网进行学习。</strong></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/24/raml-for-jax-rs插件/" itemprop="url">
+                  raml-for-jax-rs插件
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-11-24T16:20:51+08:00" content="2016-11-24">
+              2016-11-24
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>raml-for-jax-rs插件是mulesoft开发的，是实现被JAX-RS注解的java代码与Raml Api描述之间相互转换的工具。<br>其中包含jaxrs-to-raml和raml-to-jaxrs两个主要工程，分别实现一种转换过程。</p>
+<h2 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h2><h3 id="RAML生成JAX-RS"><a href="#RAML生成JAX-RS" class="headerlink" title="RAML生成JAX-RS"></a>RAML生成JAX-RS</h3><p>所有发行版本（Eclipse Plugin，Maven Plugin和Jar）的工作方式如下：</p>
+<ul>
+<li>生成接口，并在RAML定义改变的情况下重新生成接口</li>
+<li>一个接口被生成一个顶级resource，该接口下面的子接口称为sub-resouce被作为不同的方法定义在同一个接口下</li>
+<li>为每个资源操作创建响应对象包装器，以便指导实现者仅生成与RAML定义兼容的结果</li>
+<li>为不属于JAX-RS核心规范的http方法生成自定义注解（PATCH）</li>
+<li>对象基于代表 请求/响应 实体的json schemas来生成</li>
+<li>英语是接口和方法中常用的语言</li>
+</ul>
+<h4 id="当前支持"><a href="#当前支持" class="headerlink" title="当前支持"></a>当前支持</h4><ul>
+<li>JAX-RS 1.1 和 2.0</li>
+<li>除<code>@Pattern</code>外，JSR-303注解都支持，因为Raml用的是ECMA 262/Perl 5模式，而javax.validation用的是Java模式，<code>@Min/@Max</code>支持对raml中定义的非小数最大最小值的限制</li>
+<li>模型对象基于JSON schemas生成，带有Jackson1,2或者Gson注解</li>
+<li>基于XML Schemas生成带有JAXB注解的结果</li>
+</ul>
+<h4 id="JAX-RS注解"><a href="#JAX-RS注解" class="headerlink" title="JAX-RS注解"></a>JAX-RS注解</h4><ul>
+<li>Path</li>
+<li>Consumes, Produces.</li>
+<li>QueryParam, FormParam, PathParam, HeaderParam.</li>
+<li>DELETE, GET, HEAD, OPTIONS, POST, PUT.</li>
+<li>DefaultValue.</li>
+</ul>
+<h4 id="扩展注解"><a href="#扩展注解" class="headerlink" title="扩展注解"></a>扩展注解</h4><p>验证注解：  </p>
+<ul>
+<li>NotNull</li>
+<li>Min</li>
+<li>DecimalMin</li>
+<li>Max</li>
+<li>DecimalMax</li>
+</ul>
+<h2 id="支持方式"><a href="#支持方式" class="headerlink" title="支持方式"></a>支持方式</h2><p>该插件支持以下几种使用方式</p>
+<ul>
+<li>Maven 插件</li>
+<li>eclipse插件</li>
+<li>命令行</li>
+</ul>
+<h3 id="Maven插件"><a href="#Maven插件" class="headerlink" title="Maven插件"></a>Maven插件</h3><p>这里我们着重对Raml to JAX-RS方式中Maven插件的使用进行介绍</p>
+<h4 id="RAML-to-JAX-RS"><a href="#RAML-to-JAX-RS" class="headerlink" title="RAML to JAX-RS"></a>RAML to JAX-RS</h4><p>这个Maven插件用来基于raml Api生成JAX-RS注释的java接口，支持基于单一或多个RAML文件</p>
+<h5 id="Maven-组件"><a href="#Maven-组件" class="headerlink" title="Maven 组件"></a>Maven 组件</h5><p>Maven 组件仓库地址  </p>
+<ul>
+<li><a href="https://repository-master.mulesoft.org/releases/" target="_blank" rel="external">https://repository-master.mulesoft.org/releases/</a> - release repository  </li>
+<li><a href="https://repository-master.mulesoft.org/snapshots/" target="_blank" rel="external">https://repository-master.mulesoft.org/snapshots/</a> - snaphots repository  </li>
+</ul>
+<h5 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h5><p>需要在Project中的Pom文件中增加以下plug-in内容， 例如：</p>
+<pre><code>&lt;plugin&gt;
+&lt;groupId&gt;org.raml.plugins&lt;/groupId&gt;
+&lt;artifactId&gt;raml-jaxrs-maven-plugin&lt;/artifactId&gt;
+&lt;version&gt;1.3.4&lt;/version&gt;
+&lt;configuration&gt;
+    &lt;!-- Use sourcePaths if you want to provide a single RAML file or a list of RAML files --&gt;
+    &lt;sourceDirectory&gt;${basedir}/raml&lt;/sourceDirectory&gt;
+    &lt;!-- Optionally configure outputDirectory if you don&apos;t like the default value: ${project.build.directory}/generated-sources/raml-JAX-RS --&gt;
+    &lt;!-- Replace with your package name --&gt;
+    &lt;basePackageName&gt;com.acme.api&lt;/basePackageName&gt;
+    &lt;!-- Valid values: 1.1 2.0 --&gt;
+    &lt;jaxrsVersion&gt;2.0&lt;/jaxrsVersion&gt;
+    &lt;useJsr303Annotations&gt;false&lt;/useJsr303Annotations&gt;
+    &lt;!-- Valid values: jackson1 jackson2 gson none --&gt;
+    &lt;jsonMapper&gt;jackson2&lt;/jsonMapper&gt;
+    &lt;removeOldOutput&gt;true&lt;/removeOldOutput&gt;
+    &lt;!-- Optionally set extensions to a list of fully qualified names of classes
+    that implement org.raml.jaxrs.codegen.core.ext.GeneratorExtension --&gt;
+    &lt;!-- for example:
+    &lt;extensions&gt;
+        &lt;param&gt;com.abc.AuthorizationAnnotationExtension&lt;/param&gt;
+        &lt;param&gt;com.abc.ParameterFilterExtension&lt;/param&gt;
+    &lt;/extensions&gt;
+    Custom annotator for json schema to pojo convertor
+    &lt;customAnnotator&gt;com.abc.MyCustomAnnotator&lt;/customAnnotator&gt;
+    --&gt;
+&lt;/configuration&gt;
+&lt;executions&gt;
+    &lt;execution&gt;
+        &lt;goals&gt;
+            &lt;goal&gt;generate&lt;/goal&gt;
+        &lt;/goals&gt;
+        &lt;phase&gt;generate-sources&lt;/phase&gt;
+    &lt;/execution&gt;
+&lt;/executions&gt;
+&lt;/plugin&gt;
+</code></pre><h5 id="配置说明"><a href="#配置说明" class="headerlink" title="配置说明"></a>配置说明</h5><table>
+<thead>
+<tr>
+<th style="text-align:left">Schema</th>
+<th>Mean</th>
+<th>Optional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">sourceDirectory</td>
+<td>raml文件目录</td>
+<td>custom</td>
+</tr>
+<tr>
+<td style="text-align:left">sourcePaths</td>
+<td>raml文件路径集合</td>
+<td>custom</td>
+</tr>
+<tr>
+<td style="text-align:left">outputDirectory</td>
+<td>输出目录</td>
+<td>custom</td>
+</tr>
+<tr>
+<td style="text-align:left">basePackageName</td>
+<td>生成的基础包路径</td>
+<td>custom</td>
+</tr>
+<tr>
+<td style="text-align:left">removeOldOutput</td>
+<td>是否删除上一次的输出</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td style="text-align:left">jaxrsVersion</td>
+<td>JAX-RS规范版本</td>
+<td>1.1 or 2.0</td>
+</tr>
+<tr>
+<td style="text-align:left">useJsr303Annotations</td>
+<td>是否使用JSR303规范</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td style="text-align:left">jsonMapper</td>
+<td>json与java映射规范</td>
+<td>jackson1 jackson2 gson none</td>
+</tr>
+<tr>
+<td style="text-align:left">extensions</td>
+<td>扩展对Resource的生成控制</td>
+<td>custom</td>
+</tr>
+<tr>
+<td style="text-align:left">customAnnotator</td>
+<td>json schema到pojo的定制化注解器</td>
+<td>custom</td>
+</tr>
+<tr>
+<td style="text-align:left">jsonMapperConfiguration</td>
+<td>对于json映射的配置</td>
+<td>“generateBuilders”,”includeHashcodeAndEquals”,”includeToString”,”useLongIntegers”</td>
+</tr>
+<tr>
+<td style="text-align:left">skip</td>
+<td>跳过插件的执行</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td style="text-align:left">modelPackageName</td>
+<td>设置model对象所在的目录名称(basepackage+modelpackage,如果schema中已经指定了javapackage，则此配置不生效)</td>
+<td>custom</td>
+</tr>
+<tr>
+<td style="text-align:left">generateClientProxy</td>
+<td>是否生成客户端代理(不生成warpper和用在返回的schema)</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td style="text-align:left">mapToVoid</td>
+<td>true:如果resource定义的方法的response没有body，生成的java method返回值将会是void，不是wrapper response</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td style="text-align:left">useTitlePropertyForSchemaNames</td>
+<td>将title属性作为schema的名称(没试出来)</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td style="text-align:left">asyncResourceTrait</td>
+<td>【待定】</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">ignoredParameters</td>
+<td>定义忽略参数列表，忽略指定的resource query参数</td>
+<td>custom</td>
+</tr>
+</tbody>
+</table>
+<p>运行<code>mvn raml:generate</code>时，RAML定义的内容就会被处理生成相应的Java代码，同样在运行<code>mvn compile</code> 或者 <code>mvn package</code>命令时这个插件也会执行。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/24/raml语法简单介绍/" itemprop="url">
+                  RAML语法简单介绍
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-11-24T11:04:26+08:00" content="2016-11-24">
+              2016-11-24
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="人类可读的raml语法"><a href="#人类可读的raml语法" class="headerlink" title="人类可读的raml语法"></a>人类可读的raml语法</h2><p>开始设计时，首先创建一个包含以下内容的RAML文件：  </p>
+<pre><code>#%RAML 0.8
+title: This is My API
+baseUri: http://api.domain.com
+version: 1
+</code></pre><p>在以上代码中，我们首先声明这是一个RAML规范，它对应RAML 0.8，并声明API的标题、基本URI、以及这个API的版本号。<br>在RAML中声明资源非常简单，只需使用/resourceName格式。而添加方法也同样便捷，只需引用相应的HTTP谓词即可：  </p>
+<pre><code>#%RAML 0.8
+title: This is My API
+baseUri: http://api.domain.com
+version: 1
+
+/resource1:
+  get:
+    description: This gets the collection of resource1
+  post:
+    description: This adds a new item to the collection
+</code></pre><p>RAML让你能够定义多种相应，返回不同的状态码、头信息以及响应体。例如：  </p>
+<pre><code>#%RAML 0.8
+title: This is My API
+baseUri: http://api.domain.com
+version: 1
+
+/resource1:
+  get:
+    responses:
+      200:
+        headers:
+          cache-control:
+            example: |
+              public, no-cache, no-store
+
+        body:
+          application/json:
+            example: |
+              {&quot;name&quot;:&quot;Michael Stowe&quot;}
+          application/xml:
+            example: |
+              &lt;name&gt;Michael Stowe&lt;/name&gt;
+      400:
+        #...
+      401:
+        #...
+</code></pre><p>RAML本身还有大量的其它特性，让你通过schema与参数定义完整的API。它还允许你使用资源嵌套、文件引用（可以引用多个文件，以保持规范的易读性和易组织性），甚至是变量或属性的设置，从而在整个规范中保持一致性。</p>
+<pre><code>举例来说，你可以在规范中按以下方式利用这些特性：
+
+#%RAML 0.8
+title: This is My API
+baseUri: http://api.domain.com
+version: 1
+
+/resource1:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            schema: |
+              {
+                  &quot;type&quot;: &quot;object&quot;,
+                  &quot;$schema&quot;: &quot;http://json-schema.org/draft-03/schema&quot;,
+                  &quot;id&quot;: &quot;http://jsonschema.net&quot;,
+                  &quot;required&quot;: true,
+                  &quot;properties&quot;: {
+                    &quot;firstName&quot;: {
+                      &quot;type&quot;: &quot;string&quot;,
+                      &quot;required&quot;: true
+                    },
+                    &quot;lastName&quot;: {
+                      &quot;type&quot;: &quot;string&quot;,
+                      &quot;required&quot;: true,
+                      &quot;minLength&quot;: 3,
+                      &quot;maxLength&quot;: 36
+                    }
+                  }
+              }
+
+  /sub-resource:
+    get:
+      queryParameters:
+        firstName:
+          description: &quot;the user’s first name&quot;
+          example: John
+          required: true
+          type: string
+</code></pre><h2 id="对开发者十分友好"><a href="#对开发者十分友好" class="headerlink" title="对开发者十分友好"></a>对开发者十分友好</h2><p>RAML的优点不仅在于简单的格式与丰富的工具，它还能够让开发者应用编码的最佳实践，例如模式与重用代码。这不仅能够极大地减少开发者的工作，还能够促使API在不同的资源与方法中保持统一性。虽然你总是能够抽象出一套schema，以保持规范的良好组织，或是通过“!include”命令引入schema、示例与其它RAML代码片段，但RAML还提供了两个额外的实用与独特的模板特性：即traits与resourceTypes  </p>
+<h3 id="通过traits定义通用属性"><a href="#通过traits定义通用属性" class="headerlink" title="通过traits定义通用属性"></a>通过traits定义通用属性</h3><p>RAML的traits特性允许你为方法（GET、PUT、POST、PATCH、DELETE等等）定义通用的属性（或traits），例如它们是否可过滤、可搜索或是可分页。</p>
+<p>在创建trait时，你实际上是创建了一份模板，它能够通过接受参数为方法提供属性，只需几行代码就能够完成。同时为你所需的trait提供了最大程度的灵活性与自定义能力：  </p>
+<pre><code>traits:
+-searchable:
+  queryParameters:
+  query:
+  description: |
+    JSON array [{&quot;field1&quot;,&quot;value1&quot;,&quot;operator1&quot;},…] &lt;&lt;description&gt;
+  example: |
+    &lt;&lt;example&gt;&gt;
+
+/people:
+  get:
+    is: [searchable: {description: &quot;search by name&quot;, example: &quot;[\&quot;firstName\&quot;\,\&quot;Michael\&quot;,\&quot;like\&quot;]&quot;}]  
+</code></pre><h3 id="通过ResourceTypes为资源定义模板"><a href="#通过ResourceTypes为资源定义模板" class="headerlink" title="通过ResourceTypes为资源定义模板"></a>通过ResourceTypes为资源定义模板</h3><p>此外，与traits相似，resourceTypes也允许你为资源本身创建模板，以此调用通用的方法与响应。打个比方，对于Collection这种资源类型来说，你可能会大量用到POST与GET方法，并且通常会返回200、201或400等状态码。只要将它定义为一种resourceType，你就能够通过两行代码就完成调用，而无需为你所创建的每种资源都加入相同的方法与状态码。</p>
+<pre><code>resourceTypes:
+- collection:
+    description: Collection of available &lt;&lt;resourcePathName&gt;&gt;
+    get:
+      description: Get a list of &lt;&lt;resourcePathName&gt;&gt;.
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                &lt;&lt;responseVariable&gt;&gt;
+        400:
+          #...
+        401:
+          #...
+
+/people:
+  type:
+    collection:
+      responseVariable: |
+        {
+         &quot;name&quot; : &quot;Michael Stowe&quot;,
+         &quot;company&quot; : &quot;MuleSoft&quot;,
+        }
+</code></pre><p>你甚至可以在resourceTypes中定义可选的方法，只需为该方法加上一个问号（？）即可。这种可选方法只有在定义了该方法的资源中才会被引入，这就为你赋予了更大的灵活性。  </p>
+<p>  <strong><em>注：这里只介绍了一些基本用法，详细用法请参考<a href="https://github.com/raml-org/raml-spec/blob/master/raml-0.8.md" target="_blank" rel="external">官方语法介绍</a></em></strong></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/24/RAML介绍/" itemprop="url">
+                  RAML介绍
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-11-24T11:04:26+08:00" content="2016-11-24">
+              2016-11-24
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="RAML是什么"><a href="#RAML是什么" class="headerlink" title="RAML是什么"></a>RAML是什么</h2><blockquote>
+<p><strong>Write once. Use many. Creative laziness encouraged</strong><br>RESTful API Modeling Language (RAML) makes it easy to manage the whole API lifecycle from design to sharing. It’s concise - you only write what you need to define - and reusable. It is machine readable API design that is actually human friendly.</p>
+</blockquote>
+<p> RAML的全称是RESTful API Modeling Language，这是一种用来描述基于Restful架构的API（设计API）的语言。它的语法规范是基于YAML的新规范，因此机器与人类都能够轻易地理解其中的内容。  </p>
+<p> 但是，仅仅简单地创建一个原型是不够的。MuleSoft创建了一种API契约设计周期图，这一设计的前提在于API不仅仅是机器之间的一种契约，同样也是提供商与用户之间的一种契约。</p>
+<p> <img src="http://cdn4.infoqstatic.com/statics_s1_20161122-0331/resource/articles/power-of-raml/zh/resources/0923001.png" alt=""></p>
+<p> 在API设计后，可以对外提供模拟的API调用，这样就能从API使用者那得到具体反馈。这些有价值的反馈能够让公司找到设计中的缺陷，例如数据或结构中的不一致性，以及API中的一些令人困惑之处。在这一阶段及时发现设计中的问题非常关键，因为一旦你的API发布之后需要修改，那么在大多数情况下都会破坏向后兼容性，而这将影响API的使用。</p>
+<p> 这里就不对RAML的具体语法做说明了，在我的另一篇文章《<a href="https://eternityrain.github.io/2016/11/24/raml%E8%AF%AD%E6%B3%95%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/" target="_blank" rel="external">raml语法简单介绍</a>》中对语法有相关介绍。</p>
+<h2 id="为什么用RAML"><a href="#为什么用RAML" class="headerlink" title="为什么用RAML"></a>为什么用RAML</h2><p> RAML的目的不仅仅在于创建更易于理解的规范（你可以将这一工作指派给文档团队，他们会做得更好）而已。RAML的设计者Uri Sarid希望使用者能够打破固有的思维，在开始编写代码之前以一种全新的方式对API进行建模。<br> Roy Fielding博士在他的博客Untangled中指出，现在的人们总有一种倾向，他们只考虑短期的设计，目光只能看到我们所知的、我们目前所想的内容。</p>
+<p> REST风格的发明者Roy Fielding表示：“很不幸，人们很善于处理短期的设计，但对于长期的设计通常就束手无策了。”  </p>
+<p> 设计API的一大挑战在于，API通常都会存在较长的一段时间，有可能会存在数年之久。毕竟，API的设计需要开发者投入大量的精力，但同样对于客户来说也是一种极大的投入，因为客户也依赖于这些API，需要基于它们进行开发。从2009年起，Uri开始思考如何解决API的长期设计的挑战，他希望能够找到一种工具，让设计者只需几行代码就能够对API进行建模（或设计），然后快速地生成一个原型，让全球的开发者都能够尝试你的原型并提供反馈。在2013年，随着RAML 0.8的发布，他的梦想终于变成了现实。</p>
+<p> 自那时起，人们对于RAML的兴趣就在不断地升温。无论是大型企业还是小公司，他们都开始意识到了RAML所带来的益处：包括以一种人类可读的格式设计API、在设计时就看到这些API将怎样工作、并且能够为API创建一个活动的、全功能的示例，让开发者能够简单地通过点击按键，对这个API发起实际的调用。</p>
+<h2 id="周边生态"><a href="#周边生态" class="headerlink" title="周边生态"></a>周边生态</h2><ul>
+<li><p>DESIGN<br>对于基于RAML的API设计，通常使用API Workbench或API Designer作为设计平台。它们都是由mulesoft开发的，前者作为Atom的插件使用，后者是单独的一个设计平台。</p>
+</li>
+<li><p>BUILD<br>设计好的API可以由多种方式进行build： NodeJS,JAVA,NET,Python,Mule,IOT<br>这里我只简单介我们常用的两种。对于JAVA来说，通常我们使用RAML for JAX-RS进行build，简单来说就是把设计好的RAML转换成<a href="https://eternityrain.github.io/2016/09/27/JAX-RS%E8%A7%84%E8%8C%83%E7%9A%84%E7%89%88%E6%9C%AC.%E5%AE%9E%E7%8E%B0.jar%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB/" target="_blank" rel="external">JAX-RS规范</a>的java代码，用于后续的deploy。还有一种是mule的APIkit,它基于anypoint studio进行raml翻译及build。</p>
+</li>
+<li><p>TEST<br>我们可以用多数的第三方进行测试，如API Fortress, API Science, Parasoft, Postman, SmartBear。</p>
+</li>
+<li><p>Document<br>形成API文档，我们不再需要花大量的时间。运用API Console，RAML to HTML我们即可以根据RAML自动化动态的生成文档。</p>
+</li>
+<li><p>SHARE<br>我们可以简单的根据RESTful API为Java,.NET,PHP,Ruby等主流语言生成SDK，也可以使用API Notebook体验全新的API交互方式。API Notebook完全改变了开发人员与API交互的方式，让他们可以使用基本的JavaScript轻松地尝试调用，操作数据，甚至连接到多个API。</p>
+</li>
+</ul>
+<p><strong>Raml提供了全新的RESTful API设计方式，围绕其周边衍生出若干方便快捷的解决方案。无论是从思维、交互性还是效率上来说，它都是api设计上的一次成功的进步</strong></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/09/27/Jsonschema2pojo/" itemprop="url">
+                  Jsonschema2pojo中json schema规范写法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-09-27T15:00:47+08:00" content="2016-09-27">
+              2016-09-27
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>日常开发中，json数据格式经常会被用到，其简单易懂的写法（对人与计算机皆如此）以及其轻量级特性非常适用于网络间的数据传递。json数据格式与java对象会经常进行相互转换，本文探讨的是json to java的转换。<br>Jsonschema2pojo即是一种json转换java的工具</p>
+<h3 id="主流JSON库"><a href="#主流JSON库" class="headerlink" title="主流JSON库"></a>主流JSON库</h3><p>在解决json2java的问题时，一般使用四种主流的JSON库来进行json解析：</p>
+<ul>
+<li>JSON.simple</li>
+<li>GSON</li>
+<li>Jackson</li>
+<li>JSONP</li>
+</ul>
+<h3 id="Jsonschema2pojo"><a href="#Jsonschema2pojo" class="headerlink" title="Jsonschema2pojo"></a>Jsonschema2pojo</h3><p>Jsonschema2pojo支持jackson1，jackson2，gson三种规范，基于这些规范对json数据进行解析，相应的，json数据也就需要有它本身一定的写法规范，Jsonschema2pojo定义了json schema的规范和书写方式</p>
+<h2 id="Json-Schema-feature-support"><a href="#Json-Schema-feature-support" class="headerlink" title="Json Schema feature support"></a>Json Schema feature support</h2><p>这里，我就<strong>常用的以及一些扩展的</strong>书写规范向大家一一说明，也提供了一些例子供参考。  </p>
+<p>下表为<strong>json schema书写过程中固定的一些rule</strong>，请先简单阅读：</p>
+<table>
+<thead>
+<tr>
+<th>JSON Schema rule</th>
+<th>Supported</th>
+<th>Since</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type (Simple)</td>
+<td>Yes</td>
+<td>0.1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>type (Union)</td>
+<td>No</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>properties</td>
+<td>Yes</td>
+<td>0.1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>patternProperties</td>
+<td>No</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>additionalProperties</td>
+<td>Yes</td>
+<td>0.1.3</td>
+<td></td>
+</tr>
+<tr>
+<td>items</td>
+<td>Yes</td>
+<td>0.1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>additionalItems</td>
+<td>No</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>required</td>
+<td>Yes</td>
+<td>0.1.6</td>
+<td></td>
+</tr>
+<tr>
+<td>optional</td>
+<td>Yes</td>
+<td>0.1.0</td>
+<td>Deprecated</td>
+</tr>
+<tr>
+<td>dependencies</td>
+<td>No</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>minimum, maximum</td>
+<td>Yes</td>
+<td>0.3.2</td>
+<td>Via optional JSR-303 annotations</td>
+</tr>
+<tr>
+<td>exclusiveMinimum, exclusiveMaximum</td>
+<td>No</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>minItems, maxItems</td>
+<td>Yes</td>
+<td>0.3.2</td>
+<td>Via optional JSR-303 annotations</td>
+</tr>
+<tr>
+<td>uniqueItems</td>
+<td>Yes</td>
+<td>0.1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>pattern</td>
+<td>Yes</td>
+<td>0.3.2</td>
+<td>Via optional JSR-303 annotations</td>
+</tr>
+<tr>
+<td>minLength, maxLength</td>
+<td>Yes</td>
+<td>0.3.4</td>
+<td>Via optional JSR-303 annotations</td>
+</tr>
+<tr>
+<td>enum</td>
+<td>Yes</td>
+<td>0.1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>default</td>
+<td>Yes</td>
+<td>0.1.7</td>
+<td></td>
+</tr>
+<tr>
+<td>title</td>
+<td>Yes</td>
+<td>0.1.6</td>
+<td></td>
+</tr>
+<tr>
+<td>description</td>
+<td>Yes</td>
+<td>0.1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>format</td>
+<td>Yes</td>
+<td>0.1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>divisibleBy</td>
+<td>No</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>disallow</td>
+<td>No</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>extends</td>
+<td>Yes</td>
+<td>0.1.8</td>
+<td></td>
+</tr>
+<tr>
+<td>id</td>
+<td>No</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>$ref</td>
+<td>Yes</td>
+<td>0.1.6</td>
+<td>Supports absolute, relative, slash &amp; dot delimited fragment paths, self-ref</td>
+</tr>
+<tr>
+<td>$schema</td>
+<td>No</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties"><a href="#properties" class="headerlink" title="properties"></a>properties</h3><h4 id="schema"><a href="#schema" class="headerlink" title="schema"></a>schema</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">      &quot;type&quot; : &quot;object&quot;,</div><div class="line">      &quot;properties&quot; : &#123;</div><div class="line">          &quot;foo&quot; : &#123;</div><div class="line">              &quot;type&quot; : &quot;string&quot;</div><div class="line">          &#125;</div><div class="line">      &#125;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<h4 id="java"><a href="#java" class="headerlink" title="java"></a>java</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">public class MyObject &#123;</div><div class="line">        private String foo;</div><div class="line">        public String getFoo() &#123;</div><div class="line">           return foo;</div><div class="line">        &#125;</div><div class="line">        public void setFoo(String foo) &#123;</div><div class="line">           this.foo = foo;</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p> properties用于指定schema的参数，转换为pojo后，properties中的属性foo会转换为java对象的属性foo，”type”用来指定对象或属性的类型</p>
+<h3 id="type"><a href="#type" class="headerlink" title="type"></a>type</h3><p> 指定所定义的有类型概念的数据类型，下表为json schema中type声明类型与pojo中声明类型间的对应关系：</p>
+<table>
+<thead>
+<tr>
+<th>Schema Type</th>
+<th>Java Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td>java.lang.String</td>
+</tr>
+<tr>
+<td>number</td>
+<td>java.lang.Double</td>
+</tr>
+<tr>
+<td>integer</td>
+<td>java.lang.Integer</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>java.lang.Boolean</td>
+</tr>
+<tr>
+<td>object</td>
+<td>generated Java type</td>
+</tr>
+<tr>
+<td>array</td>
+<td>java.util.List</td>
+</tr>
+<tr>
+<td>array (with “uniqueItems”:true)</td>
+<td>java.util.Set</td>
+</tr>
+<tr>
+<td>null</td>
+<td>java.lang.Object</td>
+</tr>
+<tr>
+<td>any</td>
+<td>java.lang.Object</td>
+</tr>
+</tbody>
+</table>
+<h3 id="additionalProperties"><a href="#additionalProperties" class="headerlink" title="additionalProperties"></a>additionalProperties</h3><h4 id="schema1"><a href="#schema1" class="headerlink" title="schema1"></a>schema1</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">     &quot;type&quot; : &quot;object&quot;,</div><div class="line">     &quot;additionalProperties&quot; : &#123;&#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+<h4 id="java1"><a href="#java1" class="headerlink" title="java1"></a>java1</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">    public class MyObject &#123;</div><div class="line"></div><div class="line">    private java.util.Map&lt;String, Object&gt; additionalProperties = new java.util.HashMap&lt;String, Object&gt;();</div><div class="line"></div><div class="line">    @org.codehaus.jackson.annotate.JsonAnyGetter</div><div class="line">    public java.util.Map&lt;String, Object&gt; getAdditionalProperties() &#123;</div><div class="line">        return this.additionalProperties;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @org.codehaus.jackson.annotate.JsonAnySetter</div><div class="line">    public void setAdditionalProperties(String name, Object value) &#123;</div><div class="line">        this.additionalProperties.put(name, value);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p> additionalProperties为true，会生成Map作为传入参数中附加参数的接受器，false则不生成，写成“{}”等同于true。 你也可以通过指定additionalProperties的数据类型来约束生成的结果。 </p>
+<h4 id="schema2"><a href="#schema2" class="headerlink" title="schema2"></a>schema2</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">        &quot;type&quot; : &quot;object&quot;,</div><div class="line">        &quot;additionalProperties&quot; : &#123;</div><div class="line">            &quot;type&quot; : &quot;number&quot;</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h4 id="java2"><a href="#java2" class="headerlink" title="java2"></a>java2</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">    public class MyObject &#123;</div><div class="line"></div><div class="line">    private java.util.Map&lt;String, Double&gt; additionalProperties = new java.util.HashMap&lt;String, Double&gt;();</div><div class="line"></div><div class="line">    @org.codehaus.jackson.annotate.JsonAnyGetter</div><div class="line">    public java.util.Map&lt;String, Double&gt; getAdditionalProperties() &#123;</div><div class="line">        return this.additionalProperties;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @org.codehaus.jackson.annotate.JsonAnySetter</div><div class="line">    public void setAdditionalProperties(String name, Double value) &#123;</div><div class="line">        this.additionalProperties.put(name, value);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p> 上面将additionalProperties的类型改为Double，pojo中属性的泛型就会变为<code>&lt;String, Double&gt;</code> 如果将type指定为object（我的json文件名为source.json）</p>
+<h4 id="schema3"><a href="#schema3" class="headerlink" title="schema3"></a>schema3</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">        &quot;type&quot; : &quot;object&quot;,</div><div class="line">        &quot;additionalProperties&quot; : &#123;</div><div class="line">            &quot;type&quot; : &quot;object&quot;</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h4 id="java3"><a href="#java3" class="headerlink" title="java3"></a>java3</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">public class Source&#123;</div><div class="line"></div><div class="line">       private java.util.Map&lt;String, SourceProperty&gt; additionalProperties = new java.util.HashMap&lt;String, SourceProperty&gt;();</div><div class="line"></div><div class="line">       @org.codehaus.jackson.annotate.JsonAnyGetter</div><div class="line">       public java.util.Map&lt;String, SourceProperty&gt; getAdditionalProperties() &#123;</div><div class="line">           return this.additionalProperties;</div><div class="line">       &#125;</div><div class="line"></div><div class="line">       @org.codehaus.jackson.annotate.JsonAnySetter</div><div class="line">       public void setAdditionalProperties(String name, SourceProperty value) &#123;</div><div class="line">           this.additionalProperties.put(name, value);</div><div class="line">       &#125;</div><div class="line"></div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<p> 如上，会生成一个以主文件名为前缀，Property为后缀的类（SourceProperty）作为additionalProperties的value类型，该类中则有：</p>
+<h4 id="java4"><a href="#java4" class="headerlink" title="java4"></a>java4</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">private Map&lt;String, Object&gt; additionalProperties = new HashMap&lt;String, Object&gt;();</div></pre></td></tr></table></figure>
+<h3 id="array"><a href="#array" class="headerlink" title="array"></a>array</h3><h4 id="schema-1"><a href="#schema-1" class="headerlink" title="schema"></a>schema</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">        &quot;type&quot; : &quot;object&quot;,</div><div class="line">        &quot;properties&quot; : &#123;</div><div class="line">            &quot;myArrayProperty&quot; : &#123;</div><div class="line">                &quot;type&quot; : &quot;array&quot;,</div><div class="line">                &quot;items&quot; : &#123;</div><div class="line">                    &quot;type&quot; : &quot;string&quot;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p> array写法如上即会生成<code>Array&lt;string&gt;</code>类型的参数myArrayProperty，如果在myArrayProperty指定“uniqueItems”:true，生成的集合则为Set&lt;&gt;. 对于items，可以$ref(后面介绍)引用其他jsonschema文件，也可以直接在其下编写jsonschema，会生成一个以集合参数为名称（MyArrayProperty）的对象作为该集合的泛型</p>
+<h3 id="enum"><a href="#enum" class="headerlink" title="enum"></a>enum</h3><h4 id="schema-2"><a href="#schema-2" class="headerlink" title="schema"></a>schema</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">       &quot;type&quot; : &quot;object&quot;,</div><div class="line">       &quot;properties&quot; : &#123;</div><div class="line">           &quot;myEnum&quot; : &#123;</div><div class="line">               &quot;type&quot; : &quot;string&quot;,</div><div class="line">               &quot;enum&quot; : [&quot;one&quot;, &quot;secondOne&quot;, &quot;3rd one&quot;]</div><div class="line">           &#125;</div><div class="line">       &#125;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<h4 id="java-1"><a href="#java-1" class="headerlink" title="java"></a>java</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">@Generated(&quot;com.googlecode.jsonschema2pojo&quot;)</div><div class="line">   public static enum MyEnum &#123;</div><div class="line"></div><div class="line">   ONE(&quot;one&quot;),</div><div class="line">   SECOND_ONE(&quot;secondOne&quot;),</div><div class="line">   _3_RD_ONE(&quot;3rd one&quot;);</div><div class="line">   private final String value;</div><div class="line"></div><div class="line">   private MyEnum(String value) &#123;</div><div class="line">       this.value = value;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   @JsonValue</div><div class="line">   @Override</div><div class="line">   public String toString() &#123;</div><div class="line">       return this.value;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   @JsonCreator</div><div class="line">   public static MyObject.MyEnum fromValue(String value) &#123;</div><div class="line">       for (MyObject.MyEnum c: MyObject.MyEnum.values()) &#123;</div><div class="line">           if (c.value.equals(value)) &#123;</div><div class="line">               return c;</div><div class="line">           &#125;</div><div class="line">       &#125;</div><div class="line">       throw new IllegalArgumentException(value);</div><div class="line">   &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>enum作为枚举写法经常被使用，比较简单，不详细介绍</p>
+<h3 id="format"><a href="#format" class="headerlink" title="format"></a>format</h3><p> 可以给属性指定format规则，它会影响你的参数类型，和type对比，format的优先级更高，format的规则列表如下：</p>
+<table>
+<thead>
+<tr>
+<th>Format value</th>
+<th>Java type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“date-time”</td>
+<td>java.util.Date</td>
+</tr>
+<tr>
+<td>“date”</td>
+<td>String</td>
+</tr>
+<tr>
+<td>“time”</td>
+<td>String</td>
+</tr>
+<tr>
+<td>“utc-millisec”</td>
+<td>long</td>
+</tr>
+<tr>
+<td>“regex”</td>
+<td>java.util.regex.Pattern</td>
+</tr>
+<tr>
+<td>“color”</td>
+<td>String</td>
+</tr>
+<tr>
+<td>“style”</td>
+<td>String</td>
+</tr>
+<tr>
+<td>“phone”</td>
+<td>String</td>
+</tr>
+<tr>
+<td>“uri”</td>
+<td>java.net.URI</td>
+</tr>
+<tr>
+<td>“email”</td>
+<td>String</td>
+</tr>
+<tr>
+<td>“ip-address”</td>
+<td>String</td>
+</tr>
+<tr>
+<td>“ipv6”</td>
+<td>String</td>
+</tr>
+<tr>
+<td>“host-name”</td>
+<td>String</td>
+</tr>
+<tr>
+<td>“uuid”</td>
+<td>java.util.UUID</td>
+</tr>
+<tr>
+<td>anything else (unrecognised format)</td>
+<td>type is unchanged</td>
+</tr>
+</tbody>
+</table>
+<h3 id="extends"><a href="#extends" class="headerlink" title="extends"></a>extends</h3><p> extends属性声明在schema层表明继承</p>
+<p> flower.json：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">        &quot;type&quot; : &quot;object&quot;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p> rose.json</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">        &quot;type&quot; : &quot;object&quot;,</div><div class="line">        &quot;extends&quot; : &#123;</div><div class="line">            &quot;$ref&quot; : &quot;flower.json&quot;</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p> Rose.java：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">public class Rose extends Flower &#123;</div><div class="line">        ....</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h3 id="ref"><a href="#ref" class="headerlink" title="$ref"></a>$ref</h3><h4 id="Supported-protocols"><a href="#Supported-protocols" class="headerlink" title="Supported protocols"></a>Supported protocols</h4><blockquote>
+<ul>
+<li>http://, https://</li>
+<li>file://</li>
+<li>classpath:, resource:, java: (all synonyms used to resolve schemas from the classpath)</li>
+</ul>
+</blockquote>
+<h4 id="ref同样支持内部类型的引用"><a href="#ref同样支持内部类型的引用" class="headerlink" title="$ref同样支持内部类型的引用"></a>$ref同样支持内部类型的引用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">        &quot;type&quot; : &quot;object&quot;,</div><div class="line">        &quot;properties&quot; : &#123;</div><div class="line">            &quot;child1&quot; : &#123;</div><div class="line">                &quot;type&quot; : &quot;string&quot;</div><div class="line">            &#125;,</div><div class="line">            &quot;child2&quot; : &#123;</div><div class="line">               &quot;$ref&quot; : &quot;#/properties/child1&quot;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p> 上面这种child2引用了child1的属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">       &quot;description&quot; : &quot;Tree node&quot;,</div><div class="line">       &quot;type&quot; : &quot;object&quot;,</div><div class="line">       &quot;properties&quot; : &#123;</div><div class="line">          &quot;children&quot; : &#123;</div><div class="line">             &quot;type&quot; : &quot;array&quot;,</div><div class="line">             &quot;items&quot; : &#123;</div><div class="line">                 &quot;$ref&quot; : &quot;#&quot;</div><div class="line">             &#125;</div><div class="line">          &#125;</div><div class="line">       &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p> 这种写法将shema类型作为集合类型泛型的引用，类似于tree结构 也可以直接定位到集合的items属性作为类型（#/properties/children/items）</p>
+<h3 id="javaType"><a href="#javaType" class="headerlink" title="javaType"></a>javaType</h3><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">        &quot;javaType&quot; : &quot;com.other.package.CustomTypeName&quot;,</div><div class="line">        &quot;type&quot; : &quot;object&quot;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+</code></pre><p> javaType允许指定属性类型或类名称为java类（已存在或不存在的），如此生成会创建一个CustomTypeName类，并将属性类型指定为该类 如果不加”type” : “object”，则不会生成对应类，但是属性类型依然为该类名，报错而已 当然，你也可以直接指定已有的封装类</p>
+<h3 id="javaEnumNames"><a href="#javaEnumNames" class="headerlink" title="javaEnumNames"></a>javaEnumNames</h3><h4 id="schema-3"><a href="#schema-3" class="headerlink" title="schema"></a>schema</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;type&quot; : &quot;object&quot;,</div><div class="line">    &quot;properties&quot; : &#123;</div><div class="line">        &quot;foo&quot; : &#123;</div><div class="line">            &quot;type&quot; : &quot;string&quot;,</div><div class="line">            &quot;enum&quot; : [&quot;H&quot;,&quot;L&quot;],</div><div class="line">            &quot;javaEnumNames&quot; : [&quot;HIGH&quot;,&quot;LOW&quot;]</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="java-2"><a href="#java-2" class="headerlink" title="java"></a>java</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">public enum Foo &#123;</div><div class="line">    HIGH(&quot;H&quot;),</div><div class="line">    LOW(&quot;L&quot;)</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>javaEnumNames是对于enum的扩展，可以指定java中的enum列表具体名称</p>
+<h3 id="javaInterfaces"><a href="#javaInterfaces" class="headerlink" title="javaInterfaces"></a>javaInterfaces</h3><h4 id="schema-4"><a href="#schema-4" class="headerlink" title="schema"></a>schema</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;javaInterfaces&quot; : [&quot;java.io.Serializable&quot;, &quot;Cloneable&quot;],</div><div class="line">    &quot;type&quot; : &quot;object&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="java-3"><a href="#java-3" class="headerlink" title="java"></a>java</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">public class FooBar implements Serializable, Cloneable</div><div class="line">&#123;</div><div class="line">...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这个好理解，声明接口</p>
+<h3 id="javaName"><a href="#javaName" class="headerlink" title="javaName"></a>javaName</h3><p> 该属性用于指定类或属性的生成名称</p>
+<h4 id="schema-5"><a href="#schema-5" class="headerlink" title="schema"></a>schema</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;type&quot;: &quot;object&quot;,</div><div class="line">  &quot;properties&quot;: &#123;</div><div class="line">    &quot;a&quot;: &#123;</div><div class="line">      &quot;javaName&quot;: &quot;b&quot;,</div><div class="line">      &quot;type&quot;: &quot;string&quot;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="java-4"><a href="#java-4" class="headerlink" title="java"></a>java</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">public class MyClass &#123;</div><div class="line">   @JsonProperty(&quot;a&quot;)</div><div class="line">   private String b;</div><div class="line"></div><div class="line">   @JsonProperty(&quot;a&quot;)</div><div class="line">   public String getB() &#123;</div><div class="line">       return b;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   @JsonProperty(&quot;a&quot;)</div><div class="line">   public void setB(String b) &#123;</div><div class="line">       this.b = b;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p> 如果使用在主schema级别，可以直接指定对应的类名</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/09/27/JAX-RS规范的版本.实现.jar对应关系/" itemprop="url">
+                  JAX-RS规范的版本.实现.jar对应关系
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-09-27T14:46:09+08:00" content="2016-09-27">
+              2016-09-27
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">in</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JAX-RS/" itemprop="url" rel="index">
+                    <span itemprop="name">JAX-RS</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><hr>
+<p>JAX-RS: Java API for RESTful Web Services是一个Java编程语言的应用程序接口,支持按照 表象化状态转变 (REST)架构风格创建Web服务. JAX-RS使用了Java SE 5引入的Java 标注来简化Web服务客户端和服务端的开发和部署。</p>
+<h2 id="版本说明"><a href="#版本说明" class="headerlink" title="版本说明"></a>版本说明</h2><hr>
+<h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><h4 id="JCP-Java-Community-Process"><a href="#JCP-Java-Community-Process" class="headerlink" title="JCP:Java Community Process"></a>JCP:Java Community Process</h4><blockquote>
+<p>一个开放的国际组织，主要由Java开发者以及被授权者组成，职能是发展和更新。<br>Java技术和JCP两者的原创者都是SUN计算机公司。然而，JCP已经由SUN于1995年创造Java的非正式过程，演进到如今有数百名来自世界各地Java代表成员一同监督Java发展的正式程序。<br>JCP维护的规范包括J2ME、J2SE、J2EE，XML，OSS，JAIN等。组织成员可以提交JSR（Java Specification Requests），通过特定程序以后，进入到下一版本的规范里面。</p>
+</blockquote>
+<h4 id="JSR-Java-Specification-Requests"><a href="#JSR-Java-Specification-Requests" class="headerlink" title="JSR:Java Specification Requests"></a>JSR:Java Specification Requests</h4><blockquote>
+<p>Java 规范提案。是指向JCP(Java Community Process)提出新增一个标准化技术规范的正式请求。任何人都可以提交JSR，以向Java平台增添新的API和服务。JSR已成为Java界的一个重要标准。<br>即为一个规范代号：JSR311，JSR303等<br>完整JSR列表请查看<a href="https://www.jcp.org/en/jsr/all" target="_blank" rel="external">JCP官网</a></p>
+</blockquote>
+<h3 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h3><p>JSR311: 即代号为311的规范请求，对应JAX-RS规范，版本为 1.0<br>JSR399: 即代号为399的规范请求，对应JAX-RS规范，版本为 2.0</p>
+<h2 id="JAX-RS对应实现"><a href="#JAX-RS对应实现" class="headerlink" title="JAX-RS对应实现"></a>JAX-RS对应实现</h2><hr>
+<h3 id="何为实现"><a href="#何为实现" class="headerlink" title="何为实现"></a>何为实现</h3><p>对于规范的实现，可以理解为面向对象语言中实现接口的概念。接口定义的即是一种规范、一种约束，由具体的模块来去完整的诠释这种规范，此为实现。  </p>
+<p>下面是不同组织用来诠释JAX-RS规范的不同产品：</p>
+<ul>
+<li>Apache CXF，开源的Web服务框架。</li>
+<li>Jersey， 由Sun提供的JAX-RS的参考实现。</li>
+<li>RESTEasy，JBoss的实现。</li>
+<li>Restlet，由Jerome Louvel和Dave Pawson开发，是最早的REST框架，先于JAX-RS出现。</li>
+<li>Apache Wink，一个Apache软件基金会孵化器中的项目，其服务模块实现JAX-RS规范</li>
+</ul>
+<p>这里讨论Jersey和RESTEasy：<br>Jersey1.x：JAX-RS 1.0<br>Jersey2.x：JAX-RS 2.0</p>
+<p>RESTEasy1.x/2.x：JAX-RS 1.0<br>RESTEasy3.x：JAX-RS 2.0</p>
+<h2 id="Jar包区别"><a href="#Jar包区别" class="headerlink" title="Jar包区别"></a>Jar包区别</h2><hr>
+<p>在JAX-RS规范的具体应用中,经常会遇见jsr311-api.jar,jsr311-api.jar,jaxrs-api.jar,jersey-core这几种包，下面对这些包的区别做了描述：</p>
+<ul>
+<li>jsr311-api：JAX-RS 1.0 的官方规范包</li>
+<li>javax.ws.rs-api：JAX-RS 2.0 的官方规范包  </li>
+</ul>
+<p>（以上为官方标准规范包，其中包含对应的注解和一些辅助类）</p>
+<ul>
+<li>jaxrs-api：RESTEasy规范包，其中包含对应版本JAX-RS规范的内容以及自定义的异常和接口</li>
+<li>jersey-core：Jersey规范包，包含对应版本JAX-RS规范的内容以及部分实现，余下实现在jersey的其他包中</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="lashou" />
+          <p class="site-author-name" itemprop="name">lashou</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Kategorien</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lashou</span>
+</div>
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
